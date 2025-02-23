@@ -40,8 +40,18 @@ URL: /api/suggest-tasks/
 Method: GET
 Query Parameters: task_title (title of the task for which similar tasks are to be suggested)
 Example: GET http://127.0.0.1:8000/api/suggest-tasks/?task_title=Project%20A%20Review
+Response:
+{
+    "similar tasks": [
+        "Project B Testing",
+        "Project A Follow-up Meeting"
+    ],
+    "sequential tasks": [
+        ["Project A Review", "Project A Follow-up Meeting"]
+    ]
+}
 
-4. Filtering and Sorting
+5. Filtering and Sorting
 The TaskListCreateView supports filtering tasks by status and sorting them by creation date or due date using query parameters.
 To filter by status, use status={value} (e.g., /api/tasks/?status=completed).
 To sort tasks, use the ordering query parameter (ordering=due_date or ordering=-due_date for descending order).
