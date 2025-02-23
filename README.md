@@ -4,7 +4,7 @@ Setup Instructions
 1. Clone the repository: git clone https://github.com/tomibabucsik/Task-Manager.git
 2. Create a virtual enviroment: python -m venv venv ; then activate it: venv\Scripts\activate
 3. Install dependencies: pip install -r requirements.txt
-4. Apply Database Migrations: python manage.py migrats
+4. Apply Database Migrations: python manage.py migrate
 5. Create a superuser to access Django Admin panel: python manage.py createsuperuser
 6. Run the development server: python manage.py runserver
 
