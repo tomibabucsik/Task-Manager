@@ -70,4 +70,4 @@ Sequential tasks are determined based on the assumption that tasks marked as com
 Tasks that are marked as completed are evaluated in the order they were completed (based on their due_date), and pairs of tasks that are completed consecutively are flagged as sequential.
 
 4. Testing
-Unit tests are written using Django's TestCase framework to verify the core functionalities of the application, including task creation, task retrieval, task suggestions, and task sequence detection.
+Unit tests are written using Django's TestCase framework to verify the core functionalities of the application, including task suggestions and task sequence detection.
