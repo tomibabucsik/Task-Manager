@@ -62,7 +62,7 @@ The Task model includes fields such as title, description, status, and due_date 
 The status field has three choices: pending, in_progress, and completed.
 
 2. Similarity Calculation (SequenceMatcher)
-The similarity between task titles is calculated using the SequenceMatcher from Python's difflib module, with a threshold of 0.8 to determine whether two tasks are considered similar.
+The similarity between task titles is calculated using the SequenceMatcher from Python's difflib module, with a threshold of 0.6 to determine whether two tasks are considered similar.
 "Similar tasks" endpoint is used for this.
 
 3. Sequential Task Calculation
